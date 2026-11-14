@@ -14,20 +14,14 @@ export const services = [
   {
     no: "01",
     title: "AI Süreç Otomasyonu",
-    text: "Tekrarlayan iş akışlarınızı AI destekli sistemlerle değiştiriyoruz: lead takibi, teklif, raporlama, müşteri yanıtları.",
+    text: "Operasyon, finans ve ekip içi tekrarlayan işleri AI destekli sistemlere devrediyoruz: teklif hazırlama, fatura işleme, raporlama, doküman ve veri girişi.",
     tags: [] as string[],
   },
   {
     no: "02",
     title: "Kişiselleştirilmiş AI Danışmanlığı",
-    text: "Birebir stratejik rehberlik ve işletmenize özel bir AI yol haritası.",
+    text: "Birebir stratejik rehberlik ve işletmenize özel bir AI yol haritası: hangi işler otomatikleşir, hangi araçlar uygun, nereden başlanır.",
     tags: [] as string[],
-  },
-  {
-    no: "03",
-    title: "AI Reklamcılığı",
-    text: "Markanızın ChatGPT, Gemini ve Perplexity yanıtlarında görünürlüğünü artırıyor (GEO), ChatGPT reklam kampanyalarınızı kurup yönetiyoruz.",
-    tags: ["GEO", "ChatGPT Ads"],
   },
 ];
 
@@ -38,56 +32,56 @@ export const steps = [
 ];
 
 export const marquee = [
-  "Lead takibi",
   "Teklif hazırlama",
+  "Fatura işleme",
   "Raporlama",
-  "Müşteri yanıtları",
-  "İçerik planı",
-  "Randevu hatırlatma",
-  "ChatGPT reklamları",
-  "GEO",
+  "Doküman özetleme",
+  "Veri girişi",
+  "İşe alım ön eleme",
+  "Stok takibi",
+  "Toplantı notları",
 ];
 
 type Step = { kind: "msg" | "ai" | "ok"; title: string; sub: string };
 export const flowExamples: { name: string; steps: Step[] }[] = [
   {
-    name: "Lead yönetimi",
-    steps: [
-      { kind: "msg", title: "Yeni lead geldi", sub: "Web formu · Instagram DM" },
-      { kind: "ai", title: "AI analiz ediyor", sub: "Niyet, bütçe, öncelik" },
-      { kind: "ok", title: "CRM'e eklendi, yanıt gitti", sub: "Satış ekibine bildirim" },
-    ],
-  },
-  {
-    name: "E-ticaret destek",
-    steps: [
-      { kind: "msg", title: "“Kargom nerede?”", sub: "WhatsApp mesajı" },
-      { kind: "ai", title: "AI siparişi buluyor", sub: "Mağaza paneli + kargo" },
-      { kind: "ok", title: "Takip linkiyle yanıtlandı", sub: "Destek ekibine iş düşmedi" },
-    ],
-  },
-  {
     name: "Teklif hazırlama",
     steps: [
       { kind: "msg", title: "Toplantı notu yüklendi", sub: "Google Drive" },
       { kind: "ai", title: "AI teklif taslağı yazıyor", sub: "Fiyat listesi + şablon" },
-      { kind: "ok", title: "PDF teklif müşteride", sub: "Onay için takip hatırlatması" },
+      { kind: "ok", title: "PDF teklif onaya hazır", sub: "Yöneticiye bildirim" },
+    ],
+  },
+  {
+    name: "Fatura işleme",
+    steps: [
+      { kind: "msg", title: "Fatura e-postayla geldi", sub: "PDF ek" },
+      { kind: "ai", title: "AI bilgileri okuyor", sub: "Tutar, tarih, tedarikçi" },
+      { kind: "ok", title: "Muhasebe tablosuna işlendi", sub: "Elle veri girişi yok" },
     ],
   },
   {
     name: "Haftalık raporlama",
     steps: [
       { kind: "msg", title: "Pazartesi 09:00", sub: "Zamanlanmış tetikleyici" },
-      { kind: "ai", title: "AI verileri topluyor", sub: "Reklam + satış + CRM" },
+      { kind: "ai", title: "AI verileri topluyor", sub: "Sipariş + stok + finans" },
       { kind: "ok", title: "Rapor yöneticinin e-postasında", sub: "Özet ve öneriler" },
     ],
   },
   {
-    name: "Randevu hatırlatma",
+    name: "Doküman özetleme",
     steps: [
-      { kind: "msg", title: "Yarın 3 randevu var", sub: "Takvim" },
-      { kind: "ai", title: "AI kişisel mesaj yazıyor", sub: "İsim, saat, adres" },
-      { kind: "ok", title: "WhatsApp'tan onay alındı", sub: "Gelmeyenler azalıyor" },
+      { kind: "msg", title: "Yeni sözleşme yüklendi", sub: "Ortak klasör" },
+      { kind: "ai", title: "AI özetliyor", sub: "Önemli maddeler işaretlenir" },
+      { kind: "ok", title: "Özet ekibe iletildi", sub: "Okuma süresi kısalır" },
+    ],
+  },
+  {
+    name: "İşe alım ön eleme",
+    steps: [
+      { kind: "msg", title: "Yeni başvuru geldi", sub: "CV + form" },
+      { kind: "ai", title: "AI kriterlere göre eşleştiriyor", sub: "Deneyim, beceri, konum" },
+      { kind: "ok", title: "Kısa liste İK'da", sub: "Son karar ekibinizde" },
     ],
   },
 ];

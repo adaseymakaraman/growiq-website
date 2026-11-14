@@ -140,7 +140,7 @@ button, input, select, textarea { font: inherit; }
   display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;
 }
 .cta-text { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 16px; position: relative; }
-.cta-text h2 { font-family: var(--font-display); font-size: clamp(34px, 4vw, 48px); letter-spacing: -0.03em; line-height: 1.05; color: #fff; overflow-wrap: anywhere; hyphens: auto; }
+.cta-text h2 { font-family: var(--font-display); font-size: clamp(34px, 4vw, 48px); letter-spacing: -0.03em; line-height: 1.05; color: #fff; overflow-wrap: break-word; }
 .cta-text p { color: #e0e7ff; line-height: 1.6; }
 .form { flex: 1 1 380px; min-width: 0; position: relative; display: flex; flex-direction: column; gap: 14px; background: rgba(11,6,20,0.55); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 28px; }
 .form label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #e0e7ff; }

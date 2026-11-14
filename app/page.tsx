@@ -126,7 +126,7 @@ export default function Home() {
           <div className="cta">
             <div aria-hidden="true" className="blob b2" style={{ width: 320, height: 320, right: -60, top: -120, background: "#A5B4FC", opacity: 0.3, filter: "blur(70px)" }} />
             <div className="cta-text">
-              <h2>Neyi otomatikleştirebileceğinizi birlikte bulalım.</h2>
+              <h2>Nereden başlayacağımızı birlikte bulalım.</h2>
               <p>Formu doldurun, 24 saat içinde dönüş yapalım. Ya da doğrudan yazın: <a href={`mailto:${site.email}`} style={{ color: "#fff" }}>{site.email}</a></p>
             </div>
             <ContactForm />

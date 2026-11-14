@@ -10,14 +10,14 @@ function getReply(input: string): string {
   const t = input.toLocaleLowerCase("tr");
   if (/(fiyat|ücret|ne kadar|maliyet|bütçe)/.test(t))
     return "Fiyat, otomasyonun kapsamına göre değişiyor. Kısa bir keşif görüşmesinde ihtiyacınızı netleştirip size özel teklif hazırlıyoruz. Görüşme planlamak ister misiniz?";
-  if (/(geo|chatgpt|reklam|perplexity|gemini)/.test(t))
-    return "AI reklamcılığında iki şey yapıyoruz: markanızın ChatGPT, Gemini ve Perplexity yanıtlarında görünürlüğünü artırmak (GEO) ve ChatGPT reklam kampanyalarınızı kurup yönetmek. Hangisi ilginizi çekiyor?";
-  if (/(lead|crm|müşteri adayı|form)/.test(t))
-    return "Gelen leadleri otomatik olarak CRM'e aktarıp önceliklendirebilir, ilk yanıtı anında gönderebiliriz. Hangi CRM'i kullanıyorsunuz?";
+  if (/(fatura|muhasebe|gider|finans)/.test(t))
+    return "E-postayla gelen faturaları AI ile okuyup tutar, tarih ve tedarikçi bilgilerini muhasebe tablonuza otomatik işleyebiliriz.";
+  if (/(teklif|sözleşme|doküman|belge|pdf)/.test(t))
+    return "Teklif taslaklarını şablonunuza göre hazırlatabilir, sözleşme ve dokümanları otomatik özetletebiliriz. Hangi belgelerle en çok uğraşıyorsunuz?";
   if (/(rapor|excel|tablo|veri)/.test(t))
-    return "Reklam, satış ve CRM verilerinizi toplayıp her hafta otomatik rapor olarak e-postanıza gönderebiliriz.";
-  if (/(randevu|klinik|hatırlat)/.test(t))
-    return "Randevu hatırlatmalarını WhatsApp veya e-posta ile otomatik gönderip onay toplayabiliriz.";
+    return "Sipariş, stok ve finans verilerinizi toplayıp her hafta otomatik rapor olarak e-postanıza gönderebiliriz.";
+  if (/(işe alım|cv|başvuru|ik|insan kaynak)/.test(t))
+    return "Gelen başvuruları belirlediğiniz kriterlere göre ön elemeden geçirip kısa listeyi İK ekibinize iletebiliriz. Son karar her zaman sizde kalır.";
   if (/(süre|ne zaman|kaç gün|hafta)/.test(t))
     return "Süre otomasyonun karmaşıklığına bağlı. Basit akışlar genelde kısa sürede kurulur; net süreyi keşif görüşmesinden sonra paylaşıyoruz.";
   if (/(görüşme|toplantı|iletişim|randevu al)/.test(t))
@@ -66,7 +66,7 @@ export default function Chatbot() {
             {typing && <div className="typing" aria-label="Asistan yazıyor"><i /><i /><i /></div>}
             {msgs.length === 1 && (
               <div className="chips">
-                {["Lead takibi", "GEO ve ChatGPT reklamları", "Fiyatlar", "Görüşme planla"].map((c) => (
+                {["Fatura işleme", "Raporlama", "Fiyatlar", "Görüşme planla"].map((c) => (
                   <button key={c} type="button" onClick={() => send(c)}>{c}</button>
                 ))}
               </div>

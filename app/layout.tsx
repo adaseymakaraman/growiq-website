@@ -3,12 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://growiqai.net"),
-  title: "GrowIQ AI — Yapay Zekâ Otomasyonu, Danışmanlık ve AI Reklamcılığı",
+  title: "GrowIQ AI — Yapay Zekâ ile Süreç Otomasyonu ve AI Danışmanlığı",
   description:
-    "Tekrarlayan işleri yapay zekâ otomasyonlarına devredin. GrowIQ AI; süreç otomasyonu, AI danışmanlığı, GEO ve ChatGPT reklamlarıyla işletmenizi büyütür.",
+    "Tekrarlayan işleri yapay zekâ otomasyonlarına devredin. GrowIQ AI; teklif, fatura, raporlama ve doküman süreçlerini otomatikleştirir, işletmenize özel AI yol haritası çıkarır.",
   openGraph: {
     title: "GrowIQ AI — İşinizi yapay zekâ ile büyütün",
-    description: "AI süreç otomasyonu, kişiselleştirilmiş AI danışmanlığı ve AI reklamcılığı (GEO + ChatGPT Ads).",
+    description: "AI süreç otomasyonu ve kişiselleştirilmiş AI danışmanlığı.",
     url: "https://growiqai.net",
     siteName: "GrowIQ AI",
     locale: "tr_TR",
