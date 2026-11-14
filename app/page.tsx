@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { flowExamples, marquee, services, steps, testimonials, SHOW_TESTIMONIALS, site } from "@/lib/content";
+import { flowExamples, marquee, services, steps, site } from "@/lib/content";
 import ContactForm from "@/components/ContactForm";
 import Chatbot from "@/components/Chatbot";
 
@@ -121,23 +121,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        {SHOW_TESTIMONIALS && (
-          <section className="section" style={{ paddingTop: 40 }}>
-            <h2 className="h2">Müşterilerimiz ne diyor?</h2>
-            <div className="grid3">
-              {testimonials.map((t) => (
-                <figure key={t.name} className="card" style={{ margin: 0, gap: 20 }}>
-                  <blockquote className="quote">“{t.quote.replace(/[“”]/g, "")}”</blockquote>
-                  <figcaption className="who">
-                    <span className="avatar">{t.initials}</span>
-                    <span><strong style={{ display: "block", fontSize: 15 }}>{t.name}</strong><span style={{ fontSize: 13, color: "var(--muted)" }}>{t.role}</span></span>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          </section>
-        )}
 
         <section id="iletisim" className="section" style={{ paddingTop: 40, paddingBottom: 96 }}>
           <div className="cta">

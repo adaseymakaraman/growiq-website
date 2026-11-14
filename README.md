@@ -10,15 +10,11 @@ npm run build    # yayın öncesi kontrol
 ```
 
 ## Nereyi düzenlerim?
-- **Tüm metinler:** `lib/content.ts` (hizmetler, süreç, kayan şerit, otomasyon örnekleri, yorumlar)
+- **Tüm metinler:** `lib/content.ts` (hizmetler, süreç, kayan şerit, otomasyon örnekleri)
 - **Renkler ve animasyonlar:** `app/globals.css` (en üstteki `:root` değişkenleri)
 - **İletişim formu:** `components/ContactForm.tsx` (Formspree'ye gönderir)
 - **Chatbot:** `components/Chatbot.tsx` (şimdilik kurallı yanıtlar; sonraki adımda Claude API'ye bağlanacak)
 - **Logo:** `public/logo-white.png`
-
-## Yorumlar
-`lib/content.ts` içindeki yorumlar örnektir ve `SHOW_TESTIMONIALS = false` ile gizlidir.
-Gerçek, izinli müşteri yorumlarınız olduğunda metinleri değiştirip `true` yapın.
 
 ## Yayın
 Vercel'e bağlıdır; `main` dalına her gönderim otomatik yayınlanır.

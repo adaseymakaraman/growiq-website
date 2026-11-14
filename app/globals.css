@@ -132,11 +132,6 @@ button, input, select, textarea { font: inherit; }
 .steps .num { font-family: var(--font-display); font-size: 48px; }
 .steps p, .card p { color: var(--muted); line-height: 1.6; }
 
-/* ---------- Yorumlar ---------- */
-.quote { font-size: 17px; line-height: 1.6; color: var(--text); margin: 0; }
-.who { display: flex; align-items: center; gap: 12px; margin-top: auto; }
-.avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--navy)); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; }
-
 /* ---------- İletişim ---------- */
 .cta {
   position: relative; overflow: hidden; border-radius: 28px; padding: 56px 48px;

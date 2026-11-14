@@ -91,27 +91,3 @@ export const flowExamples: { name: string; steps: Step[] }[] = [
     ],
   },
 ];
-
-// ÖNEMLİ: Bunlar tasarım için ÖRNEK yorumlardır, gerçek müşterilere ait değildir.
-// Gerçek ve izinli yorumlarınız olduğunda metinleri değiştirip SHOW_TESTIMONIALS'ı true yapın.
-export const SHOW_TESTIMONIALS = false;
-export const testimonials = [
-  {
-    quote: "Her gün saatlerimizi alan DM ve form takibi artık kendiliğinden yürüyor. Ekip sadece sıcak müşterilerle konuşuyor.",
-    initials: "EK",
-    name: "E. K.",
-    role: "Kurucu, e-ticaret markası",
-  },
-  {
-    quote: "Haftalık raporu hazırlamak için yarım gün harcıyorduk. Şimdi pazartesi sabahı e-postamızda hazır bekliyor.",
-    initials: "MD",
-    name: "M. D.",
-    role: "Pazarlama müdürü, perakende",
-  },
-  {
-    quote: "Randevu hatırlatmaları otomatikleşince gelmeyen hasta sayısı belirgin şekilde düştü. Kurulum da çok hızlı oldu.",
-    initials: "SA",
-    name: "S. A.",
-    role: "Operasyon sorumlusu, klinik",
-  },
-];
