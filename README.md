@@ -17,4 +17,5 @@ npm run build    # yayın öncesi kontrol
 - **Logo:** `public/logo-white.png`
 
 ## Yayın
-Vercel'e bağlıdır; `main` dalına her gönderim otomatik yayınlanır.
+GitHub Pages ile yayınlanır. `main` dalına her gönderimde `.github/workflows/pages.yml` siteyi derleyip (`out/` klasörü) otomatik yayınlar.
+Alan adı `public/CNAME` dosyasındadır (growiqai.net).
